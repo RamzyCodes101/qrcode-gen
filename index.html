@@ -8,25 +8,28 @@
 <body>
     <div class="container">
         <p>Enter your text or URL</p>
-        <input type="text" placeholder="Text or URL">
-        //adding the image here
+        <input type="text" placeholder="Text or URL" id="qrText">
+    
         <div id="imgBox">
             <img src="" alt="" id="qrImage">
         </div>
 
-        <button>Generate QR Code</button>
+        <button onclick="generateQr()">Generate QR Code</button>
     </div>
 
     <script>
 
         let imgBox = document.getElementById("imgBox");
         let qrImage = document.getElementById("qrImage");
+        let qrText= document.getElementById("qrText");
+
 
         //write a funtion
         //generateQr
 
-        function generateQr(params) {
-            
+        function generateQr() {
+            qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="
+             + qrText.value;
         }
 
     </script>
