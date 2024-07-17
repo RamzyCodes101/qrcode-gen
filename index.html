@@ -15,7 +15,7 @@
             <img src="" id="qrImage">
         </div>
 
-        <button>Generate QR Code</button>
+        <button onclick="generateQr()">Generate QR Code</button>
     </div>
 
     <script>
@@ -25,7 +25,7 @@
         let qrText = document.getElementById("qrText");
 
         function generateQr(){
-            qrImage.src = ""
+            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
         }
        
 
