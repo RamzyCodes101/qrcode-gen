@@ -44,7 +44,7 @@ body{
     margin: 20px 0;
     font-weight: 500;
 }
-#imgBox{
+/* #imgBox{
     width: 200px;
     border-radius: 5px;
     max-height: 0;
@@ -54,9 +54,9 @@ body{
 #imgBox img{
     width: 100%;
     padding: 10px;
-}
-#imgBox .show-img{
+} */
+/* #imgBox .show-img{
     max-height: 300px;
     margin: 10px auto;
     border: 1px solid #1d1d1d;
-}
+} */
